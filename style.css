@@ -2,8 +2,10 @@
 :root {
     --cor-principal: #051D3B;
     --cor-font-principal: #C4C4C4;
+    --cor-font-cinza: rgba(255, 255, 255, 0.449);
+    --cor-background-cinza: rgba(255, 255, 255, 0.16);
 }
-
+/* Estilizando o CAbeçalho */
 body {
     background-color: var(--cor-principal);
     font-family: "Inter", sans-serif;
@@ -13,6 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 1em 1.5em 1em 1em;
 }
 
 .logo-plataforma {
@@ -23,13 +26,13 @@ header {
     width: 800px;
     padding: 1.2em;
     font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.16);
+    background-color: var(--cor-background-cinza);
     border-radius: 10px;
     border-style: none;
 }
 
 .barra-de-busca::placeholder {
-    color: rgba(255, 255, 255, 0.449);
+    color: var(--cor-font-cinza);
 }
 
 .container-figure {
@@ -46,4 +49,53 @@ header {
 .container__figure-span{
     padding-left: 0.5em;
     color: var(--cor-font-principal)
+}
+/* Section total/principal */
+.section-principal{
+    margin-top: 3em;
+}
+/* Estilizando o Menu de navegação */
+
+.menu-navegacao-aside{
+    color: var(--cor-font-principal);
+    font-weight: 300;
+    font-size: 12px;
+    padding-left: 3em;
+}
+.lista-menu-container{
+    margin: 1em 2em;
+    list-style: none;
+}
+.lista-menu-item{
+    padding-bottom: 1em;
+    list-style: none;
+}
+.button-list{
+    background-color: var(--cor-principal);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.img-icon-menu-aside{
+    width: 44px;
+}
+
+.button-list-span-one{
+    color: var(--cor-font-principal);
+    font: 300;
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+}
+.button-list-span-two{
+    color: var(--cor-font-cinza);
+    font: 300;
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
 }
