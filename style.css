@@ -23,7 +23,7 @@ header {
 }
 
 .barra-de-busca {
-    width: 800px;
+    width: 50em;
     padding: 1.2em;
     font-size: 14px;
     background-color: var(--cor-background-cinza);
@@ -53,6 +53,8 @@ header {
 /* Section total/principal */
 .section-principal{
     margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
 }
 /* Estilizando o Menu de navegação */
 
@@ -98,4 +100,10 @@ header {
 }
 a{
     text-decoration: none;
+}
+
+/* ESTILIZANDO A SECTION MAIN */
+.section-main{
+    width: 330PX;
+    height: 133PX;
 }
