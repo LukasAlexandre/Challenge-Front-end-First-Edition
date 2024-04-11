@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 :root {
     --cor-principal: #051D3B;
     --cor-font-principal: #C4C4C4;
@@ -7,7 +7,12 @@
     --cor-background-cinza: rgba(255, 255, 255, 0.16);
     --cor-background-one: #6BD1FF;
     --cor-botao: #5081FB;
+    --cor-background-black: #141414;
+    --cor-bolinha-vermelho:#FF5F56;
+    --cor-bolinha-laranja: #FFBD2E;
+    --cor-bolinha-verde: #27C93F;
     --font-family: "Inter", sans-serif;
+    --font-family-ro: "Roboto Mono", monospace;
 }
 
 /* Estilizando o CAbeçalho */
@@ -28,7 +33,7 @@ header {
 }
 
 .barra-de-busca {
-    width: 50em;
+    width: 55em;
     padding: 1.2em;
     font-size: 14px;
     background-color: var(--cor-background-cinza);
@@ -64,7 +69,11 @@ header {
     justify-content: space-between;
 }
 
-/* Estilizando o Menu de navegação */
+/* Estilizando Aside left */
+
+.aside-left {
+    width: 19em;
+}
 
 .menu-navegacao-aside {
     color: var(--cor-font-principal);
@@ -118,9 +127,77 @@ a {
 
 /* ESTILIZANDO A SECTION MAIN */
 .section-main {
-    width: 330PX;
-    height: 133PX;
+    width: 50em;
+    height: 133px;
+}
 
+.box-edit-text-main {
+    background-color: var(--cor-background-one);
+    width: 47em;
+    height: 23em;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.box-edit-text-submain {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--cor-background-black);
+}
+
+.span-ball {
+    display: flex;
+    
+}
+
+.ball-one {
+    background-color: var(--cor-bolinha-vermelho);
+    width: 11px;
+    height: 11px;
+    border-radius: 50px;
+    margin: 0.8em 0 0.8em 1em;
+}
+
+.ball-two {
+    background-color: var(--cor-bolinha-laranja);
+    width: 11px;
+    height: 11px;
+    border-radius: 50px;
+    margin: 0.8em 0 0.8em 0.5em;
+}
+
+.ball-three {
+    background-color: var(--cor-bolinha-verde);
+    width: 11px;
+    height: 11px;
+    border-radius: 50px;
+    margin: 0.8em 0 0.8em 0.5em;
+}
+
+.box-text-main {
+    margin: 1em 1em 1em 1em;
+    width: 96%;
+    height: 84%;
+    background-color: var(--cor-background-black);
+    border: 1px var(--cor-background-black);
+    color: var(--cor-font-principal);
+    outline: none;
+    resize: none;
+    font-family: var(--font-family-ro);
+}
+
+.button-highlight{
+    margin: 2em 1em;
+    color: white;
+    background-color: var(--cor-background-cinza);
+    width: 95%;
+    border: none;
+    padding: 1.2em;
+    border-radius: 7px;
+    font-weight: 100;
+    font-family: var(--font-family);
+    font-size: 16px;
 }
 
 /* ESTILIZANDO OUTRO ASIDE */
@@ -192,7 +269,8 @@ a {
     padding: 0.25em;
     cursor: pointer;
 }
-.botao-salvar-projeto{
+
+.botao-salvar-projeto {
     width: 232px;
     height: 55px;
     margin: 1.5em 2.5em 0.5em 2em;
