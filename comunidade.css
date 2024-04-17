@@ -1,0 +1,22 @@
+@import url(style.css);
+
+.img-icon-menu-aside{
+    background-color: var(--cor-botao);
+}
+
+.img-icon-menu-aside:hover{
+    background-color: var(--cor-botao-hover);
+}
+.img-icon-menu-aside:active {
+    border: 5px solid #5081FB;
+}
+.texto-icon-one{
+    background-color: var(--cor-bota-comunidade);
+}
+
+.texto-icon-one:hover{
+    background-color: var(--cor-botao-comunidade-hover);
+}
+.texto-icon-one:active{
+    border: 5px solid #5081FB44;
+}
