@@ -11,62 +11,70 @@
 
 <body>
     <header>
-        <div>
-            <img src="images/logo-plataforma.png" alt="imagem da logo da plataforma" class="logo-plataforma">
-        </div>
-        <nav>
-            <form>
-                <input type="text" placeholder="Busque por algo" class="barra-de-busca">
-            </form>
-        </nav>
-        <figure class="container-figure">
-            <img src="images/Photo.svg" alt="imagem de perfil do usuario" class="container__figure-img">
-            <span class="container__figure-span">Harry</span>
-        </figure>
-        <nav>
-            <input type="checkbox" id="menu-hamburguer">
-            <label for="menu-hamburguer" class="menu-icon">&#9776;</label>
-            <div class="menu">
-                <ul>
-                    <li class="lista-menu-item">
-                        <a href="index.html">
-                            <button class="button-list-one">
-                                <div class="texto-icon-one">
-                                    &lt;/&gt;
-                                </div>
-                                <span class="button-list-span-one">Editor de código</span>
-                            </button>
-                        </a>
-                    </li>
-                    <li class="lista-menu-item">
-                        <a href="comunidade.html">
-                            <button class="button-list-two">
-                                <div class="img-icon-menu-aside">
-                                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M3 6C4.10313 6 5 5.10313 5 4C5 2.89687 4.10313 2 3 2C1.89688 2 1 2.89687 1 4C1 5.10313 1.89688 6 3 6ZM17 6C18.1031 6 19 5.10313 19 4C19 2.89687 18.1031 2 17 2C15.8969 2 15 2.89687 15 4C15 5.10313 15.8969 6 17 6ZM18 7H16C15.45 7 14.9531 7.22188 14.5906 7.58125C15.85 8.27188 16.7437 9.51875 16.9375 11H19C19.5531 11 20 10.5531 20 10V9C20 7.89687 19.1031 7 18 7ZM10 7C11.9344 7 13.5 5.43437 13.5 3.5C13.5 1.56562 11.9344 0 10 0C8.06563 0 6.5 1.56562 6.5 3.5C6.5 5.43437 8.06563 7 10 7ZM12.4 8H12.1406C11.4906 8.3125 10.7688 8.5 10 8.5C9.23125 8.5 8.5125 8.3125 7.85938 8H7.6C5.6125 8 4 9.6125 4 11.6V12.5C4 13.3281 4.67188 14 5.5 14H14.5C15.3281 14 16 13.3281 16 12.5V11.6C16 9.6125 14.3875 8 12.4 8ZM5.40938 7.58125C5.04688 7.22188 4.55 7 4 7H2C0.896875 7 0 7.89687 0 9V10C0 10.5531 0.446875 11 1 11H3.05938C3.25625 9.51875 4.15 8.27188 5.40938 7.58125Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <span class="button-list-span-two">Comunidade</span>
-                            </button>
-                        </a>
-                    </li>
-                    <li>
-                        <figure class="container-figure-menu">
-                            <img src="images/Photo.svg" alt="imagem de perfil do usuario" class="container__figure-img">
-                            <span class="container__figure-span">Harry</span>
-                        </figure>
-                    </li>
-                </ul>
+        <div class="cabecalho">
+            <div>
+                <img src="images/logo-plataforma.png" alt="imagem da logo da plataforma" class="logo-plataforma">
             </div>
-        </nav>
+            <nav>
+                <form>
+                    <input type="text" placeholder="Busque por algo" class="barra-de-busca">
+                </form>
+            </nav>
+            <figure class="container-figure">
+                <img src="images/Photo.svg" alt="imagem de perfil do usuario" class="container__figure-img">
+                <span class="container__figure-span">Harry</span>
+            </figure>
+            <nav>
+                <input type="checkbox" id="menu-hamburguer" onclick="abrirJanela()">
+                <label for="menu-hamburguer" class="menu-icon">&#9776;</label>
+                <input type="checkbox" id="menu-hamburguer-1" onclick="abrirJanela()">
+                <label for="menu-hamburguer-1" class="menu-icon-x">&#10005;</label>
+                <div class="menu">
+                    <ul>
+                        <li class="lista-menu-item">
+                            <a href="index.html">
+                                <button class="button-list-one-part2">
+                                    <div class="texto-icon-one">
+                                        &lt;/&gt;
+                                    </div>
+                                    <span class="button-list-span-one">Editor de código</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li class="lista-menu-item">
+                            <a href="comunidade.html">
+                                <button class="button-list-two-part2">
+                                    <div class="img-icon-menu-aside">
+                                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3 6C4.10313 6 5 5.10313 5 4C5 2.89687 4.10313 2 3 2C1.89688 2 1 2.89687 1 4C1 5.10313 1.89688 6 3 6ZM17 6C18.1031 6 19 5.10313 19 4C19 2.89687 18.1031 2 17 2C15.8969 2 15 2.89687 15 4C15 5.10313 15.8969 6 17 6ZM18 7H16C15.45 7 14.9531 7.22188 14.5906 7.58125C15.85 8.27188 16.7437 9.51875 16.9375 11H19C19.5531 11 20 10.5531 20 10V9C20 7.89687 19.1031 7 18 7ZM10 7C11.9344 7 13.5 5.43437 13.5 3.5C13.5 1.56562 11.9344 0 10 0C8.06563 0 6.5 1.56562 6.5 3.5C6.5 5.43437 8.06563 7 10 7ZM12.4 8H12.1406C11.4906 8.3125 10.7688 8.5 10 8.5C9.23125 8.5 8.5125 8.3125 7.85938 8H7.6C5.6125 8 4 9.6125 4 11.6V12.5C4 13.3281 4.67188 14 5.5 14H14.5C15.3281 14 16 13.3281 16 12.5V11.6C16 9.6125 14.3875 8 12.4 8ZM5.40938 7.58125C5.04688 7.22188 4.55 7 4 7H2C0.896875 7 0 7.89687 0 9V10C0 10.5531 0.446875 11 1 11H3.05938C3.25625 9.51875 4.15 8.27188 5.40938 7.58125Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                    <span class="button-list-span-two">Comunidade</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="hr">
+                        </li>
+                        <li>
+                            <figure class="container-figure-menu">
+                                <img src="images/Photo.svg" alt="imagem de perfil do usuario"
+                                    class="container__figure-img">
+                                <span class="container__figure-span">Harry</span>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="section-principal">
             <aside class="aside-left">
-                <nav>
+                <menu>
                     <h3 class="menu-navegacao-aside">M E N U</h3>
                     <ul class="lista-menu-container">
                         <li class="lista-menu-item">
@@ -95,7 +103,7 @@
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </menu>
             </aside>
             <section class="section-main">
                 <div>
@@ -145,20 +153,19 @@ const unfold = (f, seed) => {
                 </div>
                 <div>
                     <h3 class="titulo-aside-right-down"> P E R S O N A L I Z A Ç Ã O </h3>
-                    <select class="seletor-aside-right">
-                        <option class="seletor-aside-right-item">Javascript</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="color" value="#6BD1FF" class="box-selecting">
-                </div>
-                <div>
+                    <div class="separar-tablet-personalizacao">
+                        <select class="seletor-aside-right">
+                            <option class="seletor-aside-right-item">Javascript</option>
+                        </select>
+                        <div>
+                            <input type="color" value="#6BD1FF" class="box-selecting">
+                        </div>
+                    </div>
                     <button class="botao-salvar-projeto">Salvar Projeto</button>
-                </div>
             </aside>
         </section>
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     --cor-principal: #051D3B;
     --cor-font-principal: #C4C4C4;
     --cor-font-cinza: rgba(255, 255, 255, 0.449);
-    --cor-background-cinza: rgba(255, 255, 255, 0.16);
+    --cor-background-cinza: #2D415B;
     --cor-background-one: #6BD1FF;
     --cor-botao: #5081FB;
     --cor-botao-hover: #7BA4FC;
@@ -25,7 +25,7 @@ body {
     font-family: var(--font-family)
 }
 
-header {
+.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,6 +105,17 @@ header {
 .button-list-one,
 .button-list-two {
     background-color: var(--cor-principal);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.button-list-one-part2,
+.button-list-two-part2 {
+    background-color: var(--cor-background-cinza);
     border: none;
     display: flex;
     justify-content: center;
@@ -358,6 +369,21 @@ a {
     transform: scale(1.05);
 }
 
+.menu,
+#menu-hamburguer,
+#menu-hamburguer-1,
+.menu-icon,
+.menu-icon-x,
+.hr,
+.lista-menu-item,
+.button-list-span-one,
+.button-list-span-two, 
+.container-figure-menu,
+.texto-icon-one{
+    display: none;
+}
+
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .logo-plataforma {
         width: 200px;
@@ -386,38 +412,100 @@ a {
     .menu {
         display: none;
         position: fixed;
-        top: 0px;
+        top: 100px;
         right: 50px;
         width: 250px;
         height: 100%;
-        background-color: #333;
+        background-color: var(--cor-background-cinza);
         transition: left 0.3 ease;
         border-radius: 10px;
     }
 
     .menu li {
         list-style: none;
-        padding: 0.5em 1em 0 1em;
+        padding: 0.5em 0 0.5em 0;
+    }
+
+    .menu ul {
+        padding: 0.5em;
     }
 
     .container-figure-menu {
-        padding-top: 2em;
+        padding-top: 1em;
     }
 
     #menu-hamburguer {
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
-        
     }
 
-    .menu-icon{
+    #menu-hamburguer-1 {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    .menu-icon {
         font-size: 30px;
         color: white;
         padding: 0.5em;
+        display: block;
     }
-    #menu-toggle:checked+.menu {
-        left: 0;
+
+    .menu-icon-x {
+        font-size: 30px;
+        color: white;
+        padding: 0.5em;
+        padding-top: 0;
+        display: none;
+
+    }
+
+    .hr {
+        border: none;
+        border-top: 1px solid #FFFFFF29;
+    }
+    .box-edit-text-main{
+        width: 40em;
+        margin: 2em;
+    }
+    .button-highlight{
+        margin: 0 2em;
+        width: 44em;
+        background-color: #0B254A;
+    }
+    .aside-right{
+        display: block;
+        margin-top: 28em;
+    }
+    .box-projeto-nome{
+        width: 87%;
+    }
+    .box-projeto-descrição{
+        width: 91%;
+    }
+    .separar-tablet-personalizacao{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .seletor-aside-right{
+        width: 46%;
+        margin: 0.5em 0.5em 0.5em 2.3em;
+    }
+    .box-selecting{
+        width: 340px;
+        margin: 0.5em 2.3em 0.5em 0.5em;
+    }
+    .botao-salvar-projeto{
+        width: 91%;
+    }
+    .container-figure-menu{
+        margin: 0.5em;
+        padding: 0;
+        display: flex;
+        align-items: center;
     }
 }
 
