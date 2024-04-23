@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tomorrow-night-blue.min.css">
     <title>Alura Dev</title>
 </head>
 
-<body>
+<body spellcheck="false">
     <header>
         <div class="cabecalho">
             <div>
@@ -29,6 +31,7 @@
                 <label for="menu-hamburguer" class="menu-icon">&#9776;</label>
                 <input type="checkbox" id="menu-hamburguer-1" onclick="abrirJanela()">
                 <label for="menu-hamburguer-1" class="menu-icon-x">&#10005;</label>
+
                 <div class="menu">
                     <ul>
                         <li class="lista-menu-item">
@@ -107,27 +110,26 @@
             </aside>
             <section class="section-main">
                 <div>
-                    <div class="box-edit-text-main">
-                        <div class="box-edit-text-submain">
-                            <div class="span-ball">
-                                <div class="ball-one"></div>
-                                <div class="ball-two"></div>
-                                <div class="ball-three"></div>
-                            </div>
-                            <textarea type="text" class="box-text-main" placeholder="
-const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                    <div class="codigo-wrapper">
 
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-const unfold = (f, seed) => {
-  const go = (f, seed, acc) => {
-    const res = f(seed)
-    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-  }
-  return go(f, seed, [])
-}
-                            "></textarea>
+                        <div class="span-ball">
+                            <div class="ball-one"></div>
+                            <div class="ball-two"></div>
+                            <div class="ball-three"></div>
                         </div>
+                            <code class="preview hljs " contenteditable="true" aria-label="Editor de Código">
+    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+    
+    const unfold = (f, seed) => {
+      const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+      }
+      return go(f, seed, [])
+    }
+                            </code>
                     </div>
                 </div>
                 <div>
@@ -154,8 +156,16 @@ const unfold = (f, seed) => {
                 <div>
                     <h3 class="titulo-aside-right-down"> P E R S O N A L I Z A Ç Ã O </h3>
                     <div class="separar-tablet-personalizacao">
-                        <select class="seletor-aside-right">
+                        <select class="seletor-aside-right" id="linguagem">
                             <option class="seletor-aside-right-item">Javascript</option>
+                            <option class="seletor-aside-right-item">Java</option>
+                            <option class="seletor-aside-right-item">HTML</option>
+                            <option class="seletor-aside-right-item">CSS</option>
+                            <option class="seletor-aside-right-item">Python</option>
+                            <option class="seletor-aside-right-item">Ruby</option>
+                            <option class="seletor-aside-right-item">C#</option>
+                            <option class="seletor-aside-right-item">MySql</option>
+                            <option class="seletor-aside-right-item">PHP</option>
                         </select>
                         <div>
                             <input type="color" value="#6BD1FF" class="box-selecting">
@@ -166,6 +176,7 @@ const unfold = (f, seed) => {
         </section>
     </main>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 </body>
 
 </html>
