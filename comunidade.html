@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="comunidade.css">
     <title>Alura Dev</title>
 </head>
 
@@ -58,35 +58,33 @@
             </aside>
             <section class="section-main">
                 <div>
-                    <div class="box-edit-text-main">
-                        <div class="box-edit-text-submain">
-                            <div class="span-ball">
-                                <div class="ball-one"></div>
-                                <div class="ball-two"></div>
-                                <div class="ball-three"></div>
-                            </div>
-                            <textarea type="text" class="box-text-main" 
-                            placeholder="
-const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                    <div class="codigo-wrapper">
 
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-const unfold = (f, seed) => {
-  const go = (f, seed, acc) => {
-    const res = f(seed)
-    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-  }
-  return go(f, seed, [])
-}
-                            "></textarea>
+                        <div class="span-ball">
+                            <div class="ball-one"></div>
+                            <div class="ball-two"></div>
+                            <div class="ball-three"></div>
                         </div>
+                            <code class="preview hljs " contenteditable="true" aria-label="Editor de Código">
+    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+    
+    const unfold = (f, seed) => {
+      const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+      }
+      return go(f, seed, [])
+    }
+                            </code>
                     </div>
                 </div>
                 <div>
                     <button class="button-highlight">Visualizar com o highlight</button>
                 </div>
             </section>
-            <aside>
+            <aside class="aside-right">
                 <div>
                     <h3 class="titulo-aside-right">S E U &nbsp; P R O J E T O</h3>
                     <ul>

@@ -69,7 +69,10 @@ body {
 
 .container__figure-span {
     padding-left: 0.5em;
-    color: var(--cor-font-principal)
+    color: var(--cor-font-principal);
+}
+.nave{
+    display: none;
 }
 
 /* Section total/principal */
@@ -517,7 +520,7 @@ a {
     }
 
     .button-highlight {
-        margin: 0 2em;
+        margin: 0 3em;
         width: 44em;
         background-color: #0B254A;
     }
@@ -561,8 +564,15 @@ a {
         display: flex;
         align-items: center;
     }
-
-
+    .nave{
+        display: block;
+    }
+    .codigo-wrapper{
+        margin: 2em;
+    }
+    .aside-right{
+        margin-top: 0em;
+    }
 }
 
 @media screen and (min-width: 324px) and (max-width: 768px) {

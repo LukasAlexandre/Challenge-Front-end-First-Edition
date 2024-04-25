@@ -4,6 +4,8 @@ const botao = document.querySelector('.button-highlight')
 const menu = document.querySelector('.menu');
 const menuIcon = document.querySelector('.menu-icon');
 const menuIconX = document.querySelector('.menu-icon-x');
+const navHambuguer = document.querySelector('.nave')
+const corBackground = document.querySelector('.box-selecting')
 let tela = window.innerWidth;
 
 
@@ -15,12 +17,14 @@ function abrirJanela() {
         menuIcon.style.display = 'block';
         menuIconX.style.display = 'none';
     } else if (estiloMenu.display === 'none' && tela < 1028) {
+        navHambuguer.display = 'block';
         menu.style.display = 'block';
         menuIcon.style.display = 'none';
         menuIconX.style.display = 'block';
     };
 };
 
+// Aplicar o HighLight
 function aplicarHighlight() {
     const codigo = areaDoCodigo.innerText; // Use innerText em vez de textContent
     areaDoCodigo.innerHTML = `
@@ -37,3 +41,10 @@ function aplicarHighlight() {
 botao.addEventListener('click', () => {
     aplicarHighlight();
 })
+
+// Mudar a cor do Background no editor de código
+corBackground.addEventListener('change', () =>{
+    let cor = corBackground.value;
+    areaDoCodigo.style.border = `30px solid ${cor}`;
+})
+
